@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" client="site" method="upgrade">
+    <name>mod_tz_google_map</name>
+    <author>thuongnv@templaza.com</author>
+    <creationDate>Nov 2014</creationDate>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@templaza.com</authorEmail>
+    <authorUrl>http://www.TemPlaza.com</authorUrl>
+    <version>1.0</version>
+    <description>MOD_TZ_GOOGLE_MAP_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_google_map">mod_tz_google_map.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_tz_google_map.xml</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_google_map.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_google_map.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="coordinates" type="textarea" filter="safehtml" label="MOD_TZ_COORDINATES_LABEL"/>
+                <field name="color" type="color" filter="safehtml" label="MOD_TZ_STYLE_COLOR_LABEL"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
